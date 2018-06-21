@@ -20,19 +20,19 @@
 
 			<div id="first">
 				<label for="first"> First name: </label>
-				<input type="text" name="first" id="first" size="70"/>
+				<input type="text" name="first" id="first" size="70" required/>
 			</div>
 			
 
 			<div id="last"> 
 				<label for="last"> Last name: </label>
-			<input type="text" name="last" id="last"/>
+			<input type="text" name="last" id="last" required/>
 		</div>
 			
 
 			<div id="email">
 			<label for="email"> Email address: </label>
-			<input type="email" name="email" id="email"/>
+			<input type="email" name="email" id="email" required/>
 			</div>
 			
 			<div id="password">
@@ -49,9 +49,9 @@
 
 				<tr>
 					<td class="bleh"> </td>
-					<td> <input type="password" name="pass1" id="pass1"/> </td>
+					<td> <input type="password" name="pass1" id="pass1" required /> </td>
 					<td class="bleh"> <image src="checkmark.png" alt="checked"  id="ch1" class="invalid"/> <image src="cross.png" alt="wrong" id="cr1" class="invalid" title="Passwords must be at least 8 characters long with at least one uppercase character, one lowercase character, and one number."/>  </td>
-					<td> <input type="password" name="pass2" id="pass2"/> </td>
+					<td> <input type="password" name="pass2" id="pass2"/ required> </td>
 					<td class="bleh"> <image src="checkmark.png" alt="checked"  id="checkmark" class="invalid"/> <image src="cross.png" alt="wrong" id="cross" class="invalid" title="The passwords do not match"/> </td>
 				</tr>
 			</table>
@@ -64,8 +64,6 @@
 		var input2 = document.getElementById("pass2");
 		var check = document.getElementById("checkmark");
 		var cross= document.getElementById("cross");
-		var ch1 = document.getElementById("ch1");
-		var cr1 = document.getElementById("cr1");
 
 		input1.onfocus = function(){
 			document.getElementById("rules").style.display = "block";
